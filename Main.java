@@ -9,7 +9,7 @@ public class Main {
         System.out.println("2. Cuadrado");
         System.out.println("3. Triángulo");
         System.out.print("Elige una figura: ");
-        int opcion = scan.nextInt();
+        Integer opcion = scan.nextInt();
         scan.nextLine();
 
         Figura figura = null;
@@ -19,7 +19,7 @@ public class Main {
                 System.out.print("Escribe el nombre del círculo: ");
                 String nombreCirculo = scan.nextLine();
                 System.out.print("Escribe el radio: ");
-                double radio = scan.nextDouble();
+                Double radio = scan.nextDouble();
                 figura = new Circulo(nombreCirculo, radio);
                 break;
 
@@ -27,7 +27,7 @@ public class Main {
                 System.out.print("Escribe el nombre del cuadrado: ");
                 String nombreCuadrado = scan.nextLine();
                 System.out.print("Escribe el lado: ");
-                double lado = scan.nextDouble();
+                Double lado = scan.nextDouble();
                 figura = new Cuadrado(nombreCuadrado, lado);
                 break;
 
@@ -35,9 +35,10 @@ public class Main {
                 System.out.print("Escribe el nombre del triángulo: ");
                 String nombreTriangulo = scan.nextLine();
                 System.out.print("Escribe la base: ");
-                double base = scan.nextDouble();
+                Double base = scan.nextDouble();
                 System.out.print("Escribe la altura: ");
-                double altura = scan.nextDouble();
+                Double altura = scan.nextDouble();
+
                 figura = new Triangulo(nombreTriangulo, base, altura);
                 break;
 
